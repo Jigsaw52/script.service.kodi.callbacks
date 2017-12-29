@@ -114,7 +114,6 @@ class TaskScript(AbstractTask):
             if os.path.exists(tmp) and filefound is False:
                 basedir, fn = os.path.split(tmp)
                 basedir = os.path.realpath(basedir)
-                tmpl[i] = fn
                 filefound = True
                 if i == 0:
                     if os.path.splitext(fn)[1] == u'.sh':
